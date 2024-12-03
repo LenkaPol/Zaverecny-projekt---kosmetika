@@ -1,0 +1,16 @@
+@use "color";
+html {
+    box-sizing: border-box;
+  }
+*, ::before, ::after {
+    box-sizing: inherit;
+  }
+body {
+    font-family: "Inter", sans-serif;;
+    font-size: 16px;
+    color: color.$font;
+    margin: 0;
+    img {
+        max-width: 100%;
+    }
+  }

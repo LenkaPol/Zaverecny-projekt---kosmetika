@@ -10,29 +10,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mrs+Saint+Delafield&family=Oooh+Baby&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <img src="/Images/logo.svg" alt="logo kosmetického salónu">
-        <ul>
-            <li><a href="/">Úvod</a></li>
-            <li><a href="/sluzby/">Služby</a></li>
-            <li><a href="/omne/">O mně</a></li>
-            <li><a href="/galerie/">Galerie</a></li>
-            <li><a href="/cenik/">Ceník</a></li>
-            <li><a href="/kontakt/">Kontakt</a></li>
-            <li><a href="/rezervace/">Online rezervace</a></li>
+    <nav class="menu">
+        <img class="menu__img" src="/Images/logo.svg" alt="logo kosmetického salónu">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="/">Úvod</a></li>
+            <li class="menu__item"><a href="/sluzby/">Služby</a></li>
+            <li class="menu__item"><a href="/omne/">O mně</a></li>
+            <li class="menu__item"><a href="/galerie/">Galerie</a></li>
+            <li class="menu__item"><a href="/cenik/">Ceník</a></li>
+            <li class="menu__item"><a href="/kontakt/">Kontakt</a></li>
+            <li class="menu__item menu__button"><a href="/rezervace/">Online rezervace</a></li>
         </ul>
     </nav>
     {{ content | safe }}
 <footer>
-    <img src="/Images/logo.svg" alt="logo kosmetického salónu">
-    <p>
+    <img class="footer__img" src="/Images/logo.svg" alt="logo kosmetického salónu">
+    <p class="footer__p">
         Provozuje:<br>
         Alexandra Domanová<br>
         Lešany 171<br>
         25744 Lešany<br>
         IČ: 74722531
     </p>
-    <p>
+    <p class="footer__p">
         Kontaktní informace:<br>
         Horáčkova 1208/11, Praha 4 - Krč<br>
         +420 777 115 520<br>
@@ -42,8 +42,8 @@
         +420 777 115 520<br>
         adomanova@centrum.cz
     </p>
-    <hr>
-    <p>© 2024 Alexandra Domanová – Všechna práva vyhrazena</p>
+    <hr class="footer__hr">
+    <p class="footer__p">© 2024 Alexandra Domanová – Všechna práva vyhrazena</p>
 </footer>
 </body>
 </html>
