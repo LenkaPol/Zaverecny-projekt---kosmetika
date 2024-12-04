@@ -11,29 +11,35 @@
 </head>
 <body>
     <nav class="menu">
-        <img class="menu__img" src="/Images/logo.svg" alt="logo kosmetického salónu">
-        <ul class="menu__list">
-            <li class="menu__item"><a href="/">Úvod</a></li>
-            <li class="menu__item"><a href="/sluzby/">Služby</a></li>
-            <li class="menu__item"><a href="/omne/">O mně</a></li>
-            <li class="menu__item"><a href="/galerie/">Galerie</a></li>
-            <li class="menu__item"><a href="/cenik/">Ceník</a></li>
-            <li class="menu__item"><a href="/kontakt/">Kontakt</a></li>
-            <li class="menu__item menu__button"><a href="/rezervace/">Online rezervace</a></li>
-        </ul>
+        <div class="menu--left">
+            <input type="checkbox" class="menu__checkbox" id="menu__checkbox">
+            <label for="menu__checkbox" class="menu__toggler">☰</label>
+            <img class="menu__img" src="/Images/logo.svg" alt="logo kosmetického salónu">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="/">Úvod</a></li>
+                <li class="menu__item"><a class="menu__link" href="/sluzby/">Služby</a></li>
+                <li class="menu__item"><a class="menu__link" href="/omne/">O mně</a></li>
+                <li class="menu__item"><a class="menu__link" href="/galerie/">Galerie</a></li>
+                <li class="menu__item"><a class="menu__link" href="/cenik/">Ceník</a></li>
+                <li class="menu__item"><a class="menu__link" href="/kontakt/">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="menu--right">
+            <a href="/rezervace/" class="menu__button">Online rezervace</a>
+        </div>
     </nav>
     {{ content | safe }}
-<footer>
+<footer class="footer">
     <img class="footer__img" src="/Images/logo.svg" alt="logo kosmetického salónu">
     <p class="footer__p">
-        Provozuje:<br>
+        <strong>Provozuje:</strong><br>
         Alexandra Domanová<br>
         Lešany 171<br>
         25744 Lešany<br>
         IČ: 74722531
     </p>
     <p class="footer__p">
-        Kontaktní informace:<br>
+        <strong>Kontaktní informace:</strong><br>
         Horáčkova 1208/11, Praha 4 - Krč<br>
         +420 777 115 520<br>
         adomanova@centrum.cz<br>
@@ -43,7 +49,7 @@
         adomanova@centrum.cz
     </p>
     <hr class="footer__hr">
-    <p class="footer__p">© 2024 Alexandra Domanová – Všechna práva vyhrazena</p>
+    <p class="footer__p--underline">© 2024 Alexandra Domanová – Všechna práva vyhrazena</p>
 </footer>
 </body>
 </html>

@@ -1,0 +1,25 @@
+@use "color";
+.review,
+.welcome {
+    background-color: color.$section-background;
+}
+.section {
+    text-align: center;
+    padding: 20px;
+    &__p {
+        margin: 20px 0 30px 0;
+    }
+}
+.photo {
+    &__image {
+        border-radius: 500px 500px 0 0;
+        width: 250px;
+        max-width: 100%;
+    }
+    &__caption {
+        font-family: "Oooh Baby", serif;
+        font-weight: 400;
+        font-size: 30px;
+        padding: 10px;
+    }
+}

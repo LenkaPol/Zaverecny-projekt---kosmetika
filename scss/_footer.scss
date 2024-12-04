@@ -1,0 +1,17 @@
+@use "color";
+.footer {
+    text-align: center;
+    &__img {
+        max-width: 250px;
+    }
+    &__p {
+        text-align: left;
+        margin: 16px;
+    }
+    &__p--underline {
+        margin: 16px;
+    }
+    &__hr {
+        width: 90%;
+    }
+}

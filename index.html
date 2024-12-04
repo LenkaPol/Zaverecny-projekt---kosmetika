@@ -2,35 +2,37 @@
 layout: sablona-zaklad.njk
 title: Úvodní stránka
 ---
-<header>
-    <h2>Salón Alex</h2>
-    <h1>Kosmetika, pedikúra &amp; masáže</h1>
-    <ul>
-        <li>Online rezervace</li>
-        <li>Služby</li>
-    </ul>
+<header class="header">
+    <div class="header__text">
+        <h2 class="header__h2">Salón Alex</h2>
+        <h1 class="header__h1">Kosmetika, pedikúra &amp; masáže</h1>
+        <div class="header__buttons">
+            <a href="/rezervace/" class="header__button">Online rezervace</a>
+            <a href="/sluzby/" class="header__button">Služby</a>
+        </div>
+    </div>
 </header>
-<section>
-    <p>Vítejte v mém kosmetickém salonu, kde se snoubí krása, relaxace a profesionální péče! Nabízím širokou škálu ošetření na míru, která jsou přizpůsobena vašim individuálním potřebám.
+<section class="section welcome">
+    <p class="section__p" >Vítejte v mém kosmetickém salonu, kde se snoubí krása, relaxace a profesionální péče! Nabízím širokou škálu ošetření na míru, která jsou přizpůsobena vašim individuálním potřebám.
         Objevte svět krásy a dopřejte si chvíle, kdy se můžete soustředit jen na sebe. Těším se na vaši návštěvu!</p>
-    <figure>
-        <img src="/Images/uvod-sluzby.jpg" alt="žena na kosmetickém lehátku, které jsou poskytované kosmetické služby">
-        <figcaption>Kosmetika</figcaption>
+    <figure class="photo">
+        <img class="photo__image" src="/Images/uvod-sluzby.jpg" alt="žena na kosmetickém lehátku, které jsou poskytované kosmetické služby">
+        <figcaption class="photo__caption">Kosmetika</figcaption>
     </figure>
-    <figure>
-        <img src="/Images/uvod-liceni.jpg" alt="paletka s očními barvami, do kterých je namáčen prst">
-        <figcaption>Líčení</figcaption>
+    <figure class="photo">
+        <img class="photo__image" src="/Images/uvod-liceni.jpg" alt="paletka s očními barvami, do kterých je namáčen prst">
+        <figcaption class="photo__caption">Líčení</figcaption>
     </figure>
-    <figure>
-        <img src="/Images/uvod-pedikura.jpg" alt="tři chodidla různé etniky">
-        <figcaption>Pedikúra</figcaption>
+    <figure class="photo">
+        <img class="photo__image" src="/Images/uvod-pedikura.jpg" alt="tři chodidla různé etniky">
+        <figcaption class="photo__caption">Pedikúra</figcaption>
     </figure>
-    <figure>
-        <img src="/Images/uvod-masaze.jpg" alt="žena poskytuje masáž druhé ženě, která leží na kosmetickém lehátku">
-        <figcaption>Masáže</figcaption>
+    <figure class="photo">
+        <img class="photo__image" src="/Images/uvod-masaze.jpg" alt="žena poskytuje masáž druhé ženě, která leží na kosmetickém lehátku">
+        <figcaption class="photo__caption">Masáže</figcaption>
     </figure>
 </section>
-<section>
+<section class="section establishments">
     <h2>Provozovny</h2>
     <map></map>
     <p>Horáčkova 1208/11, Praha 4 - Krč</p>
@@ -41,7 +43,7 @@ title: Úvodní stránka
     <p>Po, St, Pá 8:30 - 14:30 h</p>
     <p>dále dle možností do 20:30 h - poslední zákazník tedy od 19:30 h</p>
 </section>
-<section>
+<section class="section review">
     <img src="/Images/uvod-recenze.jpg" alt="žena poskytující kosmetické služby druhé ženě ležící na lehátku">
     <h2>Recenze</h2>
     <p>Kosmetické ošetření bylo profesionální a relaxační, s viditelnými výsledky v podobě zdravější a rozjasněné pleti. - Petra</p>
