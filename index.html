@@ -7,47 +7,59 @@ title: Úvodní stránka
         <h2 class="header__h2">Salón Alex</h2>
         <h1 class="header__h1">Kosmetika, pedikúra &amp; masáže</h1>
         <div class="header__buttons">
-            <a href="/rezervace/" class="header__button">Online rezervace</a>
-            <a href="/sluzby/" class="header__button">Služby</a>
+            <a href="/rezervace/" class="header__button header__button--left">Online rezervace</a>
+            <a href="/sluzby/" class="header__button header__button--right">Služby</a>
         </div>
     </div>
 </header>
 <section class="section welcome">
     <p class="section__p" >Vítejte v mém kosmetickém salonu, kde se snoubí krása, relaxace a profesionální péče! Nabízím širokou škálu ošetření na míru, která jsou přizpůsobena vašim individuálním potřebám.
         Objevte svět krásy a dopřejte si chvíle, kdy se můžete soustředit jen na sebe. Těším se na vaši návštěvu!</p>
-    <figure class="photo">
-        <img class="photo__image" src="/Images/uvod-sluzby.jpg" alt="žena na kosmetickém lehátku, které jsou poskytované kosmetické služby">
-        <figcaption class="photo__caption">Kosmetika</figcaption>
-    </figure>
-    <figure class="photo">
-        <img class="photo__image" src="/Images/uvod-liceni.jpg" alt="paletka s očními barvami, do kterých je namáčen prst">
-        <figcaption class="photo__caption">Líčení</figcaption>
-    </figure>
-    <figure class="photo">
-        <img class="photo__image" src="/Images/uvod-pedikura.jpg" alt="tři chodidla různé etniky">
-        <figcaption class="photo__caption">Pedikúra</figcaption>
-    </figure>
-    <figure class="photo">
-        <img class="photo__image" src="/Images/uvod-masaze.jpg" alt="žena poskytuje masáž druhé ženě, která leží na kosmetickém lehátku">
-        <figcaption class="photo__caption">Masáže</figcaption>
-    </figure>
+    <div class="section__service">
+        <figure class="photo">
+            <img class="photo__image" src="/Images/uvod-sluzby.jpg" alt="žena na kosmetickém lehátku, které jsou poskytované kosmetické služby">
+            <figcaption class="photo__caption">Kosmetika</figcaption>
+        </figure>
+        <figure class="photo">
+            <img class="photo__image" src="/Images/uvod-liceni.jpg" alt="paletka s očními barvami, do kterých je namáčen prst">
+            <figcaption class="photo__caption">Líčení</figcaption>
+        </figure>
+        <figure class="photo">
+            <img class="photo__image" src="/Images/uvod-pedikura.jpg" alt="tři chodidla různé etniky">
+            <figcaption class="photo__caption">Pedikúra</figcaption>
+        </figure>
+        <figure class="photo">
+            <img class="photo__image" src="/Images/uvod-masaze.jpg" alt="žena poskytuje masáž druhé ženě, která leží na kosmetickém lehátku">
+            <figcaption class="photo__caption">Masáže</figcaption>
+        </figure>
+    </div>
 </section>
 <section class="section establishments">
-    <h2>Provozovny</h2>
-    <map></map>
-    <p>Horáčkova 1208/11, Praha 4 - Krč</p>
-    <p>Út, Čt 9:00 - 14:30 h</p>
-    <p>dále dle možností do 18:00 h - poslední zákazník tedy od 17:00 h</p>
-    <map></map>
-    <p>Pečovatelský dům, Okružní 520, Týnec nad Sázavou</p>
-    <p>Po, St, Pá 8:30 - 14:30 h</p>
-    <p>dále dle možností do 20:30 h - poslední zákazník tedy od 19:30 h</p>
+    <h2 class="establishments__h2">Provozovny</h2>
+    <div class="establishments-map">
+        <div class="establishments__div establishments__div--left">
+            <iframe class="establishments__frame--left" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d640.5358258251792!2d14.4344331697209!3d50.046146759437676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b940ae68b770f%3A0x39f614fbea79597a!2zSG9yw6HEjWtvdmEgMTIwOC8xMSwgMTQwIDAwIFByYWhhIDQtS3LEjQ!5e0!3m2!1scs!2scz!4v1733405977535!5m2!1scs!2scz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="establishments__p--first">Horáčkova 1208/11, Praha 4 - Krč</p>
+            <p class="establishments__p">Út, Čt 9:00 - 14:30 h</p>
+            <p class="establishments__p--last">dále dle možností do 18:00 h - poslední zákazník tedy od 17:00 h</p>
+        </div>
+        <div class="establishments__div establishments__div--right">
+            <iframe class="establishments__frame--right" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.419149732822!2d14.5858913967747!3d49.83458135798728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b8135f95e019f%3A0x3b0d665c0d6f72c3!2zT2tydcW-bsOtIDUyMCwgMjU3IDQxIFTDvW5lYyBuYWQgU8OhemF2b3U!5e0!3m2!1scs!2scz!4v1733406063497!5m2!1scs!2scz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="establishments__p--first">Pečovatelský dům, Okružní 520, Týnec nad Sázavou</p>
+            <p class="establishments__p">Po, St, Pá 8:30 - 14:30 h</p>
+            <p class="establishments__p--last">dále dle možností do 20:30 h - poslední zákazník tedy od 19:30 h</p>
+        </div>
+    </div>
 </section>
 <section class="section review">
-    <img src="/Images/uvod-recenze.jpg" alt="žena poskytující kosmetické služby druhé ženě ležící na lehátku">
-    <h2>Recenze</h2>
-    <p>Kosmetické ošetření bylo profesionální a relaxační, s viditelnými výsledky v podobě zdravější a rozjasněné pleti. - Petra</p>
-    <p>Líčení bylo precizní a zvýraznilo mé přirozené rysy, díky čemuž jsem se cítila sebevědomě a krásně po celý den. - Jana</p>
-    <p>Pedikúra byla pečlivá a relaxační, s výsledkem dokonale upravených a hebkých chodidel. - Veronika</p>
-    <p>Masáž byla hluboce uvolňující, dokonale zmírnila napětí ve svalech a zanechala mě osvěženou a zrelaxovanou. - Lenka</p>
+    <img class="review__img" src="/Images/uvod-recenze.jpg" alt="žena poskytující kosmetické služby druhé ženě ležící na lehátku">
+    <div class="review__text">
+        <h2 class="review__h2">Recenze</h2>
+        <div class="review__grid">
+            <p class="review__p review__p--prvni">Kosmetické ošetření bylo profesionální a relaxační, s viditelnými výsledky v podobě zdravější a rozjasněné pleti. - <i>Petra</i></p>
+            <p class="review__p review__p--druha">Líčení bylo precizní a zvýraznilo mé přirozené rysy, díky čemuž jsem se cítila sebevědomě a krásně po celý den. - <i>Jana</i></p>
+            <p class="review__p review__p--treti">Pedikúra byla pečlivá a relaxační, s výsledkem dokonale upravených a hebkých chodidel. - <i>Veronika</i></p>
+            <p class="review__p review__p--ctvrta">Masáž byla hluboce uvolňující, dokonale zmírnila napětí ve svalech a zanechala mě osvěženou a zrelaxovanou. - <i>Lenka</i></p>
+        </div>
+    </div>
 </section>

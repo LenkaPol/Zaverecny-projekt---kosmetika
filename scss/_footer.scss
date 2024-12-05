@@ -14,4 +14,28 @@
     &__hr {
         width: 90%;
     }
+    &__a {
+        color: color.$font;
+    }
+}
+@media screen and (min-width: 640px) {
+    .footer {
+        &__div {
+            display: flex;
+            padding-left: 20px;
+        }
+    }
+}
+@media screen and (min-width: 900px) {
+    .footer-hlavni {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 100px;
+        margin-top: 40px;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .footer-hlavni {
+        justify-content: space-evenly;
+    }
 }

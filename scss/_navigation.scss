@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
     &__checkbox {
         position: absolute;
         left: -9999px;
@@ -30,7 +29,7 @@
         font-weight: 400;
     }
     &__link:hover {
-        background-color: color.$section-background;
+        background-color: color.$buttons-hover;
     }
     &__checkbox:checked ~ .menu__list {
         display: block;
@@ -47,6 +46,7 @@
         text-decoration: none;
         color: color.$font;
         font-weight: 400;
+        margin-right: 5px;
     }
     &__img {
         max-width: 50px;
@@ -59,4 +59,31 @@
 }
 label {
     font-size: 30px;
+    padding: 5px;
+}
+@media screen and (min-width: 640px) {
+    .menu {
+        &__button {
+            display: none;
+        }
+        &__toggler {
+            display: none;
+        }
+        &__list {
+            display: flex;
+        }
+        &__item {
+            border-bottom: 0;
+        }
+    }
+}
+@media screen and (min-width: 900px) {
+    .menu {
+        &__button {
+            display: block;
+        }
+        &__button:hover {
+            background-color: color.$buttons-hover;
+        }
+    }
 }

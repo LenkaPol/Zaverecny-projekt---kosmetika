@@ -1,3 +1,4 @@
+@use "color";
 .header {
     background-image: url(/Images/uvodni.jpg);
     background-size: cover;
@@ -21,5 +22,63 @@
     }
     &__text {
         padding: 50px 30px;
+    }
+}
+@media screen and (min-width: 640px){
+    .header {
+        &__h2 {
+            font-size: 55px;
+        }
+        &__h1 {
+            font-size: 55px;
+        }
+        &__text {
+            padding: 100px 60px;
+        }
+        &__buttons {
+            display: flex;
+            justify-content: center;
+            text-transform: uppercase;
+            font-weight: 400;
+            margin-top: 40px;
+        }
+        &__button {
+            background-color: color.$buttons;
+            padding: 20px;
+            width: 230px;
+            text-align: center;
+            text-decoration: none;
+            color: color.$font;
+            margin: 0 30px;
+        }
+        &__button--left {
+            border-radius: 50px 0 50px 0;
+        }
+        &__button--right {
+            border-radius: 50px 0 50px 0;
+        }
+        &__button--left:hover {
+            background-color: color.$buttons-hover;
+        }
+        &__button--right:hover {
+            background-color: color.$buttons-hover;
+        }
+    }
+}
+@media screen and (min-width: 1100px) {
+    .header {
+        height: 100vh;
+        &__h2 {
+            font-size: 90px;
+        }
+        &__h1 {
+            font-size: 120px;
+        }
+        &__button {
+            margin: 0 40px;
+        }
+        &__text {
+            padding-top: calc(50vh/2);
+        }
     }
 }
