@@ -19,7 +19,7 @@ body img {
 }
 
 .header {
-  background-image: url(/Images/uvodni.jpg);
+  background-image: url(Images/uvodni.jpg);
   background-size: cover;
 }
 .header__h2 {
