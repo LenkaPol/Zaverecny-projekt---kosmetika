@@ -31,6 +31,10 @@
         width: 250px;
         margin: 0 auto;
     }
+    &__a {
+        text-decoration: none;
+        color: color.$font;
+    }
 }
 .establishments {
     &__h2 {
