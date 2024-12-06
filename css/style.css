@@ -395,6 +395,16 @@ label {
     margin: 100px;
   }
 }
+.section__p {
+  margin: 20px 0 10px 0;
+}
+.section--druha {
+  background-color: #d5ccc4;
+}
+.section__div {
+  margin-top: 0;
+}
+
 .section {
   padding: 25px;
 }

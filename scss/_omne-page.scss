@@ -1,0 +1,12 @@
+@use "color";
+.section {
+    &__p {
+        margin: 20px 0 10px 0;
+    }
+    &--druha {
+        background-color: color.$section-background;
+    }
+    &__div {
+        margin-top: 0;
+    }
+}
