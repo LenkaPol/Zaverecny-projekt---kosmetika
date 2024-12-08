@@ -1,0 +1,22 @@
+@use "color";
+.section {
+    &__table {
+        width: 100%;
+        max-width: 800px;
+        margin: 20px auto;
+        border-collapse: collapse;
+        text-align: left;
+    }
+    &__h2 {
+        margin-top: 0;
+    }
+}
+.table {
+    &__td {
+        padding: 12px 50px 12px 0;
+    }
+    &__td--price {
+        padding: 0;
+        text-align: right;
+    }
+}

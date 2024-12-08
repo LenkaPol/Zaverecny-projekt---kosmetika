@@ -17,6 +17,9 @@
         border-radius: 100px 0 100px 0;
         filter: grayscale(90%);
     }
+    &__photo:hover {
+        filter: none;
+    }
     &__img--omne {
         width: 200px;
         border-radius:300px 300px 0 0;

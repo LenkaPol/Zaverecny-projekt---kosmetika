@@ -400,6 +400,25 @@ label {
     margin: 100px;
   }
 }
+.section__table {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+.section__h2 {
+  margin-top: 0;
+}
+
+.table__td {
+  padding: 12px 50px 12px 0;
+}
+.table__td--price {
+  padding: 0;
+  text-align: right;
+}
+
 .section__h2 {
   text-align: center;
   padding: 20px 0 0 0;
@@ -468,6 +487,9 @@ label {
   padding: 10px;
   border-radius: 100px 0 100px 0;
   filter: grayscale(90%);
+}
+.section__photo:hover {
+  filter: none;
 }
 .section__img--omne {
   width: 200px;
