@@ -75,6 +75,10 @@ label {
         &__item {
             border-bottom: 0;
         }
+        &__link:hover {
+            background-color: color.$menu-background;
+            text-decoration: underline 3px solid color.$buttons-hover;
+        }
     }
 }
 @media screen and (min-width: 900px) {

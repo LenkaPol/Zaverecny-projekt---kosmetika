@@ -177,6 +177,11 @@ label {
   .menu__item {
     border-bottom: 0;
   }
+  .menu__link:hover {
+    background-color: #ece9e6;
+    -webkit-text-decoration: underline 3px solid #bfb7b0;
+            text-decoration: underline 3px solid #bfb7b0;
+  }
 }
 @media screen and (min-width: 900px) {
   .menu__button {
@@ -395,16 +400,116 @@ label {
     margin: 100px;
   }
 }
-.section__p {
-  margin: 20px 0 10px 0;
+.section__h2 {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.section__img--levyroh, .section__img--pravyroh {
+  margin: 10px;
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section__img--levyroh {
+  border-radius: 0 50px 0 50px;
+}
+.section__img--pravyroh {
+  border-radius: 50px 0 50px 0;
+}
+.section__img--galerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  padding-bottom: 20px;
+}
+.section--svetla {
+  background-color: #ece9e6;
+}
+
+@media screen and (min-width: 640px) {
+  .section__img--levyroh, .section__img--pravyroh {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+  }
+  .section__img--levyroh {
+    border-radius: 0 75px 0 75px;
+  }
+  .section__img--pravyroh {
+    border-radius: 75px 0 75px 0;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .section__img--levyroh, .section__img--pravyroh {
+    margin: 30px;
+  }
+  .section__img--galerie {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+.section__p--omne {
+  margin: 20px 20px 10px 20px;
 }
 .section--druha {
   background-color: #d5ccc4;
 }
-.section__div {
-  margin-top: 0;
+.section__div--certifikat {
+  margin-top: 20px;
+}
+.section__photo {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+  border-radius: 100px 0 100px 0;
+  filter: grayscale(90%);
+}
+.section__img--omne {
+  width: 200px;
+  border-radius: 300px 300px 0 0;
 }
 
+@media screen and (min-width: 640px) {
+  .section__img--omne {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .section--prvni {
+    display: flex;
+    margin: 0 150px;
+  }
+  .section__p--omne {
+    text-align: left;
+  }
+  .section--prava {
+    padding-left: 20px;
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section--leva {
+    display: flex;
+    flex-basis: 45%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+  }
+  .section__img--omne {
+    width: 60%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .section__div--certifikat {
+    margin: 50px 150px;
+  }
+}
 .section {
   padding: 25px;
 }
