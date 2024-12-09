@@ -7,12 +7,12 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
+  font-family: "Cardo", serif;
+  font-size: 17px;
+  font-weight: 400;
   color: #222222;
   margin: 0;
-  background-color: #ece9e6;
+  background-color: #e1ddd8;
 }
 body img {
   max-width: 100%;
@@ -21,19 +21,21 @@ body img {
 .header {
   background-image: url(/Images/uvodni.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .header__h2 {
-  font-family: "Mrs Saint Delafield", cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 40px;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
   margin: 0;
 }
 .header__h1 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Cormorant", serif;
   text-transform: uppercase;
   font-size: 40px;
-  font-weight: 300;
+  font-weight: 200;
   text-align: center;
   margin: 0;
 }
@@ -57,12 +59,13 @@ body img {
   .header__buttons {
     display: flex;
     justify-content: center;
+    align-items: center;
     text-transform: uppercase;
     font-weight: 400;
     margin-top: 40px;
   }
   .header__button {
-    background-color: #d5ccc4;
+    background-color: #cbc4bb;
     padding: 20px;
     width: 230px;
     text-align: center;
@@ -77,10 +80,10 @@ body img {
     border-radius: 50px 0 50px 0;
   }
   .header__button--left:hover {
-    background-color: #bfb7b0;
+    background-color: #c0b7ad;
   }
   .header__button--right:hover {
-    background-color: #bfb7b0;
+    background-color: #c0b7ad;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -91,13 +94,13 @@ body img {
     font-size: 90px;
   }
   .header__h1 {
-    font-size: 120px;
+    font-size: 118px;
   }
   .header__button {
     margin: 0 40px;
   }
   .header__text {
-    padding-top: 25vh;
+    padding-top: 20vh;
   }
 }
 .menu {
@@ -114,10 +117,10 @@ body img {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #ece9e6;
+  background-color: #e1ddd8;
 }
 .menu__item {
-  border-bottom: 1px solid #d5ccc4;
+  border-bottom: 1px solid #cbc4bb;
 }
 .menu__item:last-child {
   border-bottom: none;
@@ -129,9 +132,10 @@ body img {
   color: #222222;
   text-transform: uppercase;
   font-weight: 400;
+  font-size: 16px;
 }
 .menu__link:hover {
-  background-color: #bfb7b0;
+  background-color: #c0b7ad;
 }
 .menu__checkbox:checked ~ .menu__list {
   display: block;
@@ -141,10 +145,10 @@ body img {
 }
 .menu__button {
   padding: 10px 20px;
-  background-color: #d5ccc4;
+  background-color: #cbc4bb;
   border: none;
   border-radius: 30px 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Cardo", serif;
   text-decoration: none;
   color: #222222;
   font-weight: 400;
@@ -178,9 +182,9 @@ label {
     border-bottom: 0;
   }
   .menu__link:hover {
-    background-color: #ece9e6;
-    -webkit-text-decoration: underline 3px solid #bfb7b0;
-            text-decoration: underline 3px solid #bfb7b0;
+    background-color: #e1ddd8;
+    -webkit-text-decoration: underline 2px solid #c0b7ad;
+            text-decoration: underline 2px solid #c0b7ad;
   }
 }
 @media screen and (min-width: 900px) {
@@ -188,7 +192,7 @@ label {
     display: block;
   }
   .menu__button:hover {
-    background-color: #bfb7b0;
+    background-color: #c0b7ad;
   }
 }
 .footer {
@@ -232,7 +236,7 @@ label {
 }
 .review,
 .welcome {
-  background-color: #d5ccc4;
+  background-color: #cbc4bb;
 }
 
 .section {
@@ -249,19 +253,11 @@ label {
   max-width: 100%;
 }
 .photo__caption {
-  font-family: "Oooh Baby", serif;
+  font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-size: 30px;
   padding: 10px;
   margin-bottom: 40px;
-}
-.photo__caption::after {
-  content: "";
-  display: block;
-  height: 1px;
-  background-color: #ece9e6;
-  width: 250px;
-  margin: 0 auto;
 }
 .photo__a {
   text-decoration: none;
@@ -441,7 +437,7 @@ label {
   padding-bottom: 20px;
 }
 .section--svetla {
-  background-color: #ece9e6;
+  background-color: #e1ddd8;
 }
 
 @media screen and (min-width: 640px) {
@@ -572,7 +568,7 @@ label {
   margin: 20px 20px 10px 20px;
 }
 .section--druha {
-  background-color: #d5ccc4;
+  background-color: #cbc4bb;
 }
 .section__div--certifikat {
   margin-top: 20px;
@@ -634,14 +630,14 @@ label {
   padding: 25px;
 }
 .section__h2 {
-  font-family: "Oooh Baby", serif;
+  font-family: "Great Vibes", cursive;
   font-weight: 500;
   font-size: 50px;
   margin: 0;
 }
 .section__h3 {
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 20px;
 }
 .section__p--main {
   margin: 20px 0;
@@ -650,7 +646,7 @@ label {
   margin: 50px 0;
 }
 .section--tmava {
-  background-color: #d5ccc4;
+  background-color: #cbc4bb;
 }
 .section__img {
   width: 200px;

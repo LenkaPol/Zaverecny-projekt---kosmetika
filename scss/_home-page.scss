@@ -17,19 +17,11 @@
         max-width: 100%;
     }
     &__caption {
-        font-family: "Oooh Baby", serif;
+        font-family: "Great Vibes", cursive;
         font-weight: 400;
         font-size: 30px;
         padding: 10px;
         margin-bottom: 40px;
-    }
-    &__caption::after {
-        content: "";
-        display: block;
-        height: 1px;
-        background-color: color.$menu-background;
-        width: 250px;
-        margin: 0 auto;
     }
     &__a {
         text-decoration: none;
