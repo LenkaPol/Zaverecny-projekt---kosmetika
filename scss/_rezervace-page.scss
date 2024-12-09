@@ -1,0 +1,9 @@
+@use "color";
+.section {
+    &__h2--objednani {
+        font-family: "Cormorant", serif;
+    }
+    &--objednani {
+        background-color: color.$section-background;
+    }
+}

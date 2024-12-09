@@ -25,9 +25,9 @@ body img {
   background-position: center;
 }
 .header__h2 {
-  font-family: "Great Vibes", cursive;
+  font-family: "WindSong", cursive;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   margin: 0;
 }
@@ -237,9 +237,10 @@ label {
 .review,
 .welcome {
   background-color: #cbc4bb;
+  text-align: center;
 }
 
-.section {
+.section--establishments, .section--review {
   text-align: center;
   padding: 20px;
 }
@@ -253,8 +254,8 @@ label {
   max-width: 100%;
 }
 .photo__caption {
-  font-family: "Great Vibes", cursive;
-  font-weight: 400;
+  font-family: "WindSong", cursive;
+  font-weight: 500;
   font-size: 30px;
   padding: 10px;
   margin-bottom: 40px;
@@ -333,7 +334,7 @@ label {
   }
   .review__img {
     width: 350px;
-    height: 100%;
+    height: auto;
   }
   .review__text {
     margin: 20px;
@@ -347,8 +348,12 @@ label {
     flex-wrap: nowrap;
     justify-content: center;
   }
+  .section__p--welcome {
+    padding: 0 200px 50px 200px;
+    font-size: 18px;
+  }
   .photo__image {
-    width: 200px;
+    width: 250px;
   }
   .photo__caption::after {
     width: 200px;
@@ -390,6 +395,8 @@ label {
     grid-row: 5/6;
   }
   .review__img {
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 500px;
   }
   .review__text {
@@ -626,12 +633,19 @@ label {
     margin: 50px 150px;
   }
 }
+.section__h2--objednani {
+  font-family: "Cormorant", serif;
+}
+.section--objednani {
+  background-color: #cbc4bb;
+}
+
 .section {
   padding: 25px;
 }
 .section__h2 {
-  font-family: "Great Vibes", cursive;
-  font-weight: 500;
+  font-family: "WindSong", cursive;
+  font-weight: 400;
   font-size: 50px;
   margin: 0;
 }

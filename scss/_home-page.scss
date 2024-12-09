@@ -2,10 +2,14 @@
 .review,
 .welcome {
     background-color: color.$section-background;
+    text-align: center;
 }
 .section {
-    text-align: center;
-    padding: 20px;
+    &--establishments,
+    &--review {
+        text-align: center;
+        padding: 20px;
+    }
     &__p {
         margin: 30px 0 40px 0;
     }
@@ -17,8 +21,8 @@
         max-width: 100%;
     }
     &__caption {
-        font-family: "Great Vibes", cursive;
-        font-weight: 400;
+        font-family: "WindSong", cursive;
+        font-weight: 500;
         font-size: 30px;
         padding: 10px;
         margin-bottom: 40px;
@@ -104,7 +108,7 @@
         padding: 0;
         &__img {
             width: 350px;
-            height: 100%;
+            height: auto;
         }
         &__text {
             margin: 20px;
@@ -120,10 +124,14 @@
             flex-wrap: nowrap;
             justify-content: center;
         }
+        &__p--welcome {
+            padding: 0 200px 50px 200px;
+            font-size: 18px;
+        }
     }
     .photo {
         &__image {
-            width: 200px;
+            width: 250px;
         }
         &__caption::after {
             width: 200px;
@@ -169,6 +177,7 @@
             grid-row: 5/6;
         }
         &__img {
+            object-fit: cover;
             width: 500px;
         }
         &__text {
