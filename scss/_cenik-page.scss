@@ -2,13 +2,10 @@
 .section {
     &__table {
         width: 100%;
-        max-width: 800px;
-        margin: 20px auto;
+        max-width: 600px;
+        margin: 30px auto;
         border-collapse: collapse;
         text-align: left;
-    }
-    &__h2 {
-        margin-top: 0;
     }
 }
 .table {

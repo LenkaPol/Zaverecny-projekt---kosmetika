@@ -1,0 +1,111 @@
+@use "color";
+.section {
+    &__h2--kontakty {
+        text-transform: uppercase;
+        font-weight: 300;
+        padding: 10px;
+        margin: 0;
+        font-size: 25px;
+    }
+    &__p--velke {
+        font-size: 20px;
+    }
+    &__a {
+        text-decoration: none;
+        color: color.$font;
+    }
+    &__frame--left {
+        width: 300px;
+        height: 280px;
+        border: none;
+        border-radius: 0 100px 0 100px;
+    }
+    &__frame--right {
+        width: 300px;
+        height: 280px;
+        border: none;
+        border-radius: 0 100px 0 100px;
+    }
+    &__frame {
+        margin: 10px;
+    }
+    &__p--first {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    &__p--last {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (min-width: 900px) {
+    .section {
+        &__text {
+            display: flex;
+            justify-content: center;
+        }
+        &__div--leva {
+            flex-basis: 50%;
+            text-align: left;
+        }
+        &__div--prava {
+            flex-basis: 50%;
+        }
+        &__map {
+            display: flex;
+            justify-content: space-around;
+        }
+        &__div--mapa {
+            text-align: center;
+        }
+        &__p--first {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+    }
+    .div--mapa {
+        margin: 20px;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .section {
+        &__text {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: auto;
+            gap: 100px;
+            margin: 50px 100px;
+        }
+        &__frame--left {
+            width: 330px;
+            height: 310px;
+        }
+        &__frame--right {
+            width: 330px;
+            height: 310px;
+        }
+        &__h2--kontakty {
+            font-size: 30px;
+        }
+    }
+}
+@media screen and (min-width: 1300px) {
+    .section {
+        &__text {
+            margin: 80px 150px;
+        }
+        &__map {
+            margin: 80px 100px;
+        }
+    }
+}
+@media screen and (min-width: 1500px) {
+    .section {
+        &__text {
+            margin: 80px 350px;
+        }
+        &__map {
+            margin: 80px 200px;
+        }
+    }
+}

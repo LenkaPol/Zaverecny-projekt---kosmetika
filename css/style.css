@@ -402,13 +402,10 @@ label {
 }
 .section__table {
   width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: 600px;
+  margin: 30px auto;
   border-collapse: collapse;
   text-align: left;
-}
-.section__h2 {
-  margin-top: 0;
 }
 
 .table__td {
@@ -468,6 +465,107 @@ label {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(2, auto);
+  }
+}
+.section__h2--kontakty {
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 10px;
+  margin: 0;
+  font-size: 25px;
+}
+.section__p--velke {
+  font-size: 20px;
+}
+.section__a {
+  text-decoration: none;
+  color: #222222;
+}
+.section__frame--left {
+  width: 300px;
+  height: 280px;
+  border: none;
+  border-radius: 0 100px 0 100px;
+}
+.section__frame--right {
+  width: 300px;
+  height: 280px;
+  border: none;
+  border-radius: 0 100px 0 100px;
+}
+.section__frame {
+  margin: 10px;
+}
+.section__p--first {
+  margin-top: 30px;
+  font-size: 20px;
+}
+.section__p--last {
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 900px) {
+  .section__text {
+    display: flex;
+    justify-content: center;
+  }
+  .section__div--leva {
+    flex-basis: 50%;
+    text-align: left;
+  }
+  .section__div--prava {
+    flex-basis: 50%;
+  }
+  .section__map {
+    display: flex;
+    justify-content: space-around;
+  }
+  .section__div--mapa {
+    text-align: center;
+  }
+  .section__p--first {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+  .div--mapa {
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .section__text {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    gap: 100px;
+    margin: 50px 100px;
+  }
+  .section__frame--left {
+    width: 330px;
+    height: 310px;
+  }
+  .section__frame--right {
+    width: 330px;
+    height: 310px;
+  }
+  .section__h2--kontakty {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .section__text {
+    margin: 80px 150px;
+  }
+  .section__map {
+    margin: 80px 100px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .section__text {
+    margin: 80px 350px;
+  }
+  .section__map {
+    margin: 80px 200px;
   }
 }
 .section__p--omne {
