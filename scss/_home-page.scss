@@ -3,13 +3,12 @@
 .welcome {
     background-color: color.$section-background;
     text-align: center;
+    padding: 20px;
 }
-.section {
-    &--establishments,
-    &--review {
-        text-align: center;
-        padding: 20px;
-    }
+.establishments,
+.review {
+    text-align: center;
+    padding: 20px;
     &__p {
         margin: 30px 0 40px 0;
     }
@@ -83,12 +82,10 @@
     }
 }
 @media screen and (min-width: 900px) {
-    .section {
-        &__service {
+    .service {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-        }
     }
     .establishments-map {
         display: flex;
@@ -116,18 +113,15 @@
     }
 }
 @media screen and (min-width: 1100px) {
-    .section {
+    .uvod {
         &__p {
-            margin: 50px 200px;
-        }
-        &__service {
-            flex-wrap: nowrap;
-            justify-content: center;
-        }
-        &__p--welcome {
             padding: 0 200px 50px 200px;
             font-size: 18px;
         }
+    }
+    .service {
+        flex-wrap: nowrap;
+        justify-content: center;
     }
     .photo {
         &__image {

@@ -1,7 +1,11 @@
 @use "color";
-.section {
+.galerie {
     &__h2 {
         text-align: center;
+        font-family: "WindSong", cursive;
+        font-weight: 500;
+        font-size: 35px;
+        margin: 0;
         padding: 20px 0 0 0;
     }
     &__img--levyroh,
@@ -17,19 +21,19 @@
     &__img--pravyroh {
         border-radius: 50px 0 50px 0;
     }
-    &__img--galerie {
+    &__img {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin: 20px;
         padding-bottom: 20px;
     }
-    &--svetla {
-        background-color: color.$menu-background;
+    &--tmava {
+        background-color: color.$section-background;
     }
 }
 @media screen and (min-width: 640px) {
-    .section {
+    .galerie {
         &__img--levyroh,
         &__img--pravyroh {
             margin: 20px;
@@ -42,18 +46,24 @@
         &__img--pravyroh {
             border-radius: 75px 0 75px 0;
         }
+        &__h2 {
+            font-size: 45px;
+        }
     }
 }
 @media screen and (min-width: 1100px) {
-    .section {
+    .galerie {
         &__img--levyroh,
         &__img--pravyroh {
             margin: 30px;
         }
-        &__img--galerie {
+        &__img {
             display: grid;
             grid-template-columns: repeat(4,auto);
             grid-template-rows: repeat(2, auto);
+        }
+        &__h2 {
+            font-size: 55px;
         }
     }
 }

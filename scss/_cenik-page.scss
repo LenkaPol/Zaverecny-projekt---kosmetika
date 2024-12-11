@@ -1,11 +1,24 @@
 @use "color";
-.section {
+.cenik {
+    padding: 20px;
+    text-align: center;
     &__table {
         width: 100%;
         max-width: 600px;
         margin: 30px auto;
         border-collapse: collapse;
         text-align: left;
+    }
+    &__h2 {
+        text-align: center;
+        font-family: "WindSong", cursive;
+        font-weight: 500;
+        font-size: 35px;
+        margin: 0;
+        padding: 20px 0 0 0;
+    }
+    &--tmava {
+        background-color: color.$section-background;
     }
 }
 .table {
@@ -15,5 +28,20 @@
     &__td--price {
         padding: 0;
         text-align: right;
+    }
+}
+@media screen and (min-width: 640px) {
+    .cenik {
+        &__h2 {
+            font-size: 45px;
+        }
+    }
+}
+@media screen and (min-width: 1100px) {
+    .cenik {
+        &__h2 {
+            font-size: 55px;
+            padding: 10px;
+        }
     }
 }

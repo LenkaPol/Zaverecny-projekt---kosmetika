@@ -1,6 +1,7 @@
 @use "color";
-.section {
+.sluzby {
     padding: 25px;
+    text-align: center;
     &__h2 {
         font-family: "WindSong", cursive;
         font-weight: 400;
@@ -26,7 +27,7 @@
     }
 }
 @media screen and (min-width: 640px){
-    .section {
+    .sluzby {
         padding: 50px;
     }
 }
@@ -50,7 +51,7 @@
     }
 }
 @media screen and (min-width: 1100px){
-    .section {
+    .sluzby {
         &__img {
             width: 220px;
             height: 270px;
@@ -60,6 +61,8 @@
             display: grid;
             grid-template-columns: 350px 350px 350px;
             grid-template-rows: repeat(3, auto);
+            justify-content: center;
+            gap: 20px;
         }
         &__p {
             margin: 20px 0;
@@ -68,6 +71,7 @@
             display: grid;
             grid-template-rows: 100px 300px 150px;
             justify-items: center;
+            margin-bottom: 0;
         }
         &__h2 {
             font-size: 65px;
@@ -75,9 +79,10 @@
     }
 }
 @media screen and (min-width: 1500px) {
-    .section {
+    .sluzby {
         &__div--main {
             grid-template-columns: 450px 450px 450px;
+            gap: 30px;
         }
         &__p--main {
             margin: 20px 250px;

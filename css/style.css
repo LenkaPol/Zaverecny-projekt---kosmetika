@@ -71,7 +71,7 @@ body img {
     text-align: center;
     text-decoration: none;
     color: #222222;
-    margin: 0 30px;
+    margin: 0 20px;
   }
   .header__button--left {
     border-radius: 50px 0 50px 0;
@@ -135,7 +135,8 @@ body img {
   font-size: 16px;
 }
 .menu__link:hover {
-  background-color: #c0b7ad;
+  -webkit-text-decoration: underline 2px solid #c0b7ad;
+          text-decoration: underline 2px solid #c0b7ad;
 }
 .menu__checkbox:checked ~ .menu__list {
   display: block;
@@ -157,6 +158,7 @@ body img {
 .menu__img {
   max-width: 50px;
   margin: 0 10px;
+  display: none;
 }
 .menu--left {
   display: flex;
@@ -182,9 +184,13 @@ label {
     border-bottom: 0;
   }
   .menu__link:hover {
-    background-color: #e1ddd8;
     -webkit-text-decoration: underline 2px solid #c0b7ad;
             text-decoration: underline 2px solid #c0b7ad;
+  }
+  .menu__img {
+    max-width: 50px;
+    margin: 0 10px;
+    display: block;
   }
 }
 @media screen and (min-width: 900px) {
@@ -238,13 +244,16 @@ label {
 .welcome {
   background-color: #cbc4bb;
   text-align: center;
+  padding: 20px;
 }
 
-.section--establishments, .section--review {
+.establishments,
+.review {
   text-align: center;
   padding: 20px;
 }
-.section__p {
+.establishments__p,
+.review__p {
   margin: 30px 0 40px 0;
 }
 
@@ -312,7 +321,7 @@ label {
   }
 }
 @media screen and (min-width: 900px) {
-  .section__service {
+  .service {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -341,16 +350,13 @@ label {
   }
 }
 @media screen and (min-width: 1100px) {
-  .section__p {
-    margin: 50px 200px;
-  }
-  .section__service {
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-  .section__p--welcome {
+  .uvod__p {
     padding: 0 200px 50px 200px;
     font-size: 18px;
+  }
+  .service {
+    flex-wrap: nowrap;
+    justify-content: center;
   }
   .photo__image {
     width: 250px;
@@ -403,12 +409,27 @@ label {
     margin: 100px;
   }
 }
-.section__table {
+.cenik {
+  padding: 20px;
+  text-align: center;
+}
+.cenik__table {
   width: 100%;
   max-width: 600px;
   margin: 30px auto;
   border-collapse: collapse;
   text-align: left;
+}
+.cenik__h2 {
+  text-align: center;
+  font-family: "WindSong", cursive;
+  font-weight: 500;
+  font-size: 35px;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+.cenik--tmava {
+  background-color: #cbc4bb;
 }
 
 .table__td {
@@ -419,115 +440,146 @@ label {
   text-align: right;
 }
 
-.section__h2 {
+@media screen and (min-width: 640px) {
+  .cenik__h2 {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .cenik__h2 {
+    font-size: 55px;
+    padding: 10px;
+  }
+}
+.galerie__h2 {
   text-align: center;
+  font-family: "WindSong", cursive;
+  font-weight: 500;
+  font-size: 35px;
+  margin: 0;
   padding: 20px 0 0 0;
 }
-.section__img--levyroh, .section__img--pravyroh {
+.galerie__img--levyroh, .galerie__img--pravyroh {
   margin: 10px;
   width: 120px;
   height: 120px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.section__img--levyroh {
+.galerie__img--levyroh {
   border-radius: 0 50px 0 50px;
 }
-.section__img--pravyroh {
+.galerie__img--pravyroh {
   border-radius: 50px 0 50px 0;
 }
-.section__img--galerie {
+.galerie__img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 20px;
   padding-bottom: 20px;
 }
-.section--svetla {
-  background-color: #e1ddd8;
+.galerie--tmava {
+  background-color: #cbc4bb;
 }
 
 @media screen and (min-width: 640px) {
-  .section__img--levyroh, .section__img--pravyroh {
+  .galerie__img--levyroh, .galerie__img--pravyroh {
     margin: 20px;
     width: 200px;
     height: 200px;
   }
-  .section__img--levyroh {
+  .galerie__img--levyroh {
     border-radius: 0 75px 0 75px;
   }
-  .section__img--pravyroh {
+  .galerie__img--pravyroh {
     border-radius: 75px 0 75px 0;
+  }
+  .galerie__h2 {
+    font-size: 45px;
   }
 }
 @media screen and (min-width: 1100px) {
-  .section__img--levyroh, .section__img--pravyroh {
+  .galerie__img--levyroh, .galerie__img--pravyroh {
     margin: 30px;
   }
-  .section__img--galerie {
+  .galerie__img {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(2, auto);
   }
+  .galerie__h2 {
+    font-size: 55px;
+  }
 }
-.section__h2--kontakty {
+.kontakt {
+  padding: 20px;
+  text-align: center;
+}
+.kontakt__h2 {
   text-transform: uppercase;
   font-weight: 300;
   padding: 10px;
   margin: 0;
   font-size: 25px;
 }
-.section__p--velke {
+.kontakt__p--velke {
   font-size: 20px;
 }
-.section__a {
+.kontakt__a {
   text-decoration: none;
   color: #222222;
 }
-.section__frame--left {
+.kontakt__frame--left {
   width: 300px;
   height: 280px;
   border: none;
   border-radius: 0 100px 0 100px;
 }
-.section__frame--right {
+.kontakt__frame--right {
   width: 300px;
   height: 280px;
   border: none;
   border-radius: 0 100px 0 100px;
 }
-.section__frame {
+.kontakt__frame {
   margin: 10px;
 }
-.section__p--first {
+.kontakt__p--first {
   margin-top: 30px;
   font-size: 20px;
 }
-.section__p--last {
+.kontakt__p--last {
   font-size: 14px;
   margin-bottom: 50px;
 }
+.kontakt--tmava {
+  background-color: #cbc4bb;
+}
 
 @media screen and (min-width: 900px) {
-  .section__text {
+  .kontakt {
+    padding: 50px;
+  }
+  .kontakt__text {
     display: flex;
     justify-content: center;
   }
-  .section__div--leva {
+  .kontakt__div--leva {
     flex-basis: 50%;
     text-align: left;
   }
-  .section__div--prava {
+  .kontakt__div--prava {
     flex-basis: 50%;
   }
-  .section__map {
+  .kontakt__map {
     display: flex;
     justify-content: space-around;
   }
-  .section__div--mapa {
+  .kontakt__div--mapa {
     text-align: center;
   }
-  .section__p--first {
+  .kontakt__p--first {
     margin-top: 30px;
     font-size: 16px;
   }
@@ -536,51 +588,55 @@ label {
   }
 }
 @media screen and (min-width: 1100px) {
-  .section__text {
+  .kontakt__text {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: auto;
     gap: 100px;
     margin: 50px 100px;
   }
-  .section__frame--left {
+  .kontakt__frame--left {
     width: 330px;
     height: 310px;
   }
-  .section__frame--right {
+  .kontakt__frame--right {
     width: 330px;
     height: 310px;
   }
-  .section__h2--kontakty {
+  .kontakt__h2 {
     font-size: 30px;
   }
 }
 @media screen and (min-width: 1300px) {
-  .section__text {
+  .kontakt__text {
     margin: 80px 150px;
   }
-  .section__map {
+  .kontakt__map {
     margin: 80px 100px;
   }
 }
 @media screen and (min-width: 1500px) {
-  .section__text {
+  .kontakt__text {
     margin: 80px 350px;
   }
-  .section__map {
+  .kontakt__map {
     margin: 80px 200px;
   }
 }
-.section__p--omne {
+.omne {
+  padding: 20px;
+  text-align: center;
+}
+.omne__p {
   margin: 20px 20px 10px 20px;
 }
-.section--druha {
+.omne--druha {
   background-color: #cbc4bb;
 }
-.section__div--certifikat {
+.omne__div {
   margin-top: 20px;
 }
-.section__photo {
+.omne__photo {
   width: 200px;
   height: 200px;
   -o-object-fit: cover;
@@ -589,86 +645,98 @@ label {
   border-radius: 100px 0 100px 0;
   filter: grayscale(90%);
 }
-.section__photo:hover {
+.omne__photo:hover {
   filter: none;
 }
-.section__img--omne {
+.omne__img {
   width: 200px;
   border-radius: 300px 300px 0 0;
 }
+.omne__h2 {
+  font-family: "WindSong", cursive;
+  font-weight: 500;
+  font-size: 35px;
+}
 
 @media screen and (min-width: 640px) {
-  .section__img--omne {
+  .omne__img {
     width: 300px;
+  }
+  .omne__h2 {
+    font-size: 45px;
   }
 }
 @media screen and (min-width: 1100px) {
-  .section--prvni {
+  .omne--prvni {
     display: flex;
     margin: 0 150px;
   }
-  .section__p--omne {
+  .omne__p {
     text-align: left;
   }
-  .section--prava {
+  .omne--prava {
     padding-left: 20px;
     flex-basis: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .section--leva {
+  .omne--leva {
     display: flex;
     flex-basis: 45%;
     flex-grow: 1;
     flex-shrink: 1;
     justify-content: center;
   }
-  .section__img--omne {
+  .omne__img {
     width: 60%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .section__div--certifikat {
+  .omne__div {
     margin: 50px 150px;
   }
+  .omne__h2 {
+    font-size: 55px;
+  }
 }
-.section__h2--objednani {
-  font-family: "Cormorant", serif;
-}
-.section--objednani {
+.rezervace {
   background-color: #cbc4bb;
 }
-
-.section {
-  padding: 25px;
+.rezervace__h2 {
+  font-family: "Cormorant", serif;
 }
-.section__h2 {
+
+.sluzby {
+  padding: 25px;
+  text-align: center;
+}
+.sluzby__h2 {
   font-family: "WindSong", cursive;
   font-weight: 400;
   font-size: 50px;
   margin: 0;
 }
-.section__h3 {
+.sluzby__h3 {
   font-weight: 600;
   font-size: 20px;
 }
-.section__p--main {
+.sluzby__p--main {
   margin: 20px 0;
 }
-.section__div {
+.sluzby__div {
   margin: 50px 0;
 }
-.section--tmava {
+.sluzby--tmava {
   background-color: #cbc4bb;
 }
-.section__img {
+.sluzby__img {
   width: 200px;
   border-radius: 400px 400px 0 0;
 }
 
 @media screen and (min-width: 640px) {
-  .section {
+  .sluzby {
     padding: 50px;
   }
 }
@@ -690,34 +758,38 @@ label {
   }
 }
 @media screen and (min-width: 1100px) {
-  .section__img {
+  .sluzby__img {
     width: 220px;
     height: 270px;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .section__div--main {
+  .sluzby__div--main {
     display: grid;
     grid-template-columns: 350px 350px 350px;
     grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    gap: 20px;
   }
-  .section__p {
+  .sluzby__p {
     margin: 20px 0;
   }
-  .section__div {
+  .sluzby__div {
     display: grid;
     grid-template-rows: 100px 300px 150px;
     justify-items: center;
+    margin-bottom: 0;
   }
-  .section__h2 {
+  .sluzby__h2 {
     font-size: 65px;
   }
 }
 @media screen and (min-width: 1500px) {
-  .section__div--main {
+  .sluzby__div--main {
     grid-template-columns: 450px 450px 450px;
+    gap: 30px;
   }
-  .section__p--main {
+  .sluzby__p--main {
     margin: 20px 250px;
   }
 }/*# sourceMappingURL=style.css.map */

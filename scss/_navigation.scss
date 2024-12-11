@@ -30,7 +30,7 @@
         font-size: 16px;
     }
     &__link:hover {
-        background-color: color.$buttons-hover;
+        text-decoration: underline 2px solid color.$buttons-hover;
     }
     &__checkbox:checked ~ .menu__list {
         display: block;
@@ -52,6 +52,7 @@
     &__img {
         max-width: 50px;
         margin: 0 10px;
+        display: none;
     }
     &--left {
         display: flex;
@@ -77,8 +78,12 @@ label {
             border-bottom: 0;
         }
         &__link:hover {
-            background-color: color.$menu-background;
             text-decoration: underline 2px solid color.$buttons-hover;
+        }
+        &__img {
+            max-width: 50px;
+            margin: 0 10px;
+            display: block;
         }
     }
 }

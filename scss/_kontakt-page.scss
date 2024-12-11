@@ -1,6 +1,8 @@
 @use "color";
-.section {
-    &__h2--kontakty {
+.kontakt {
+    padding: 20px;
+    text-align: center;
+    &__h2 {
         text-transform: uppercase;
         font-weight: 300;
         padding: 10px;
@@ -37,9 +39,13 @@
         font-size: 14px;
         margin-bottom: 50px;
     }
+    &--tmava {
+        background-color: color.$section-background;
+    }
 }
 @media screen and (min-width: 900px) {
-    .section {
+    .kontakt {
+        padding: 50px;
         &__text {
             display: flex;
             justify-content: center;
@@ -68,7 +74,7 @@
     }
 }
 @media screen and (min-width: 1100px) {
-    .section {
+    .kontakt {
         &__text {
             display: grid;
             grid-template-columns: repeat(2, 50%);
@@ -84,13 +90,13 @@
             width: 330px;
             height: 310px;
         }
-        &__h2--kontakty {
+        &__h2 {
             font-size: 30px;
         }
     }
 }
 @media screen and (min-width: 1300px) {
-    .section {
+    .kontakt {
         &__text {
             margin: 80px 150px;
         }
@@ -100,7 +106,7 @@
     }
 }
 @media screen and (min-width: 1500px) {
-    .section {
+    .kontakt {
         &__text {
             margin: 80px 350px;
         }

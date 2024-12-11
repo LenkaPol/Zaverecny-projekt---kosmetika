@@ -1,12 +1,14 @@
 @use "color";
-.section {
-    &__p--omne {
+.omne {
+    padding: 20px;
+    text-align: center;
+    &__p {
         margin: 20px 20px 10px 20px;
     }
     &--druha {
         background-color: color.$section-background;
     }
-    &__div--certifikat {
+    &__div {
         margin-top: 20px;
     }
     &__photo {
@@ -20,25 +22,33 @@
     &__photo:hover {
         filter: none;
     }
-    &__img--omne {
+    &__img {
         width: 200px;
         border-radius:300px 300px 0 0;
     }
+    &__h2 {
+        font-family: "WindSong", cursive;
+        font-weight: 500;
+        font-size: 35px;
+    }
 }
 @media screen and (min-width: 640px) {
-    .section {
-        &__img--omne {
+    .omne {
+        &__img {
             width: 300px;
+        }
+        &__h2 {
+            font-size: 45px;
         }
     }
 }
 @media screen and (min-width: 1100px) {
-    .section {
+    .omne {
         &--prvni {
             display: flex;
             margin: 0 150px;
         }
-        &__p--omne {
+        &__p {
             text-align: left;
         }
         &--prava {
@@ -55,12 +65,15 @@
             flex-shrink: 1;
             justify-content: center;
         }
-        &__img--omne {
+        &__img{
             width: 60%;
             object-fit: cover;
         }
-        &__div--certifikat {
+        &__div{
             margin: 50px 150px;
+        }
+        &__h2 {
+            font-size: 55px;
         }
     }
 }
