@@ -13,6 +13,7 @@
     }
     &__hr {
         width: 90%;
+        border: 1px solid color.$section-background;
     }
     &__a {
         color: color.$font;

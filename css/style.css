@@ -1,3 +1,9 @@
+/*
+$menu-background: #e1ddd8;
+$section-background: #cbc4bb;
+$buttons: #cbc4bb;
+$font: #222222;
+$buttons-hover: #c0b7ad;*/
 html {
   box-sizing: border-box;
 }
@@ -8,11 +14,11 @@ html {
 
 body {
   font-family: "Cardo", serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
-  color: #222222;
+  color: #030303;
   margin: 0;
-  background-color: #e1ddd8;
+  background-color: #d8cfc7;
 }
 body img {
   max-width: 100%;
@@ -30,6 +36,7 @@ body img {
   font-weight: 400;
   text-align: center;
   margin: 0;
+  color: #3f3f3f;
 }
 .header__h1 {
   font-family: "Cormorant", serif;
@@ -38,6 +45,7 @@ body img {
   font-weight: 200;
   text-align: center;
   margin: 0;
+  color: #3f3f3f;
 }
 .header__buttons {
   display: none;
@@ -65,12 +73,12 @@ body img {
     margin-top: 40px;
   }
   .header__button {
-    background-color: #cbc4bb;
+    background-color: #bdb2a7;
     padding: 20px;
     width: 230px;
     text-align: center;
     text-decoration: none;
-    color: #222222;
+    color: #030303;
     margin: 0 20px;
   }
   .header__button--left {
@@ -80,10 +88,10 @@ body img {
     border-radius: 50px 0 50px 0;
   }
   .header__button--left:hover {
-    background-color: #c0b7ad;
+    background-color: #a9978b;
   }
   .header__button--right:hover {
-    background-color: #c0b7ad;
+    background-color: #a9978b;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -117,10 +125,10 @@ body img {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #e1ddd8;
+  background-color: #d8cfc7;
 }
 .menu__item {
-  border-bottom: 1px solid #cbc4bb;
+  border-bottom: 1px solid #bdb2a7;
 }
 .menu__item:last-child {
   border-bottom: none;
@@ -129,14 +137,14 @@ body img {
   display: block;
   padding: 15px;
   text-decoration: none;
-  color: #222222;
+  color: #030303;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
 }
 .menu__link:hover {
-  -webkit-text-decoration: underline 2px solid #c0b7ad;
-          text-decoration: underline 2px solid #c0b7ad;
+  -webkit-text-decoration: underline 2px solid #a9978b;
+          text-decoration: underline 2px solid #a9978b;
 }
 .menu__checkbox:checked ~ .menu__list {
   display: block;
@@ -146,12 +154,12 @@ body img {
 }
 .menu__button {
   padding: 10px 20px;
-  background-color: #cbc4bb;
+  background-color: #bdb2a7;
   border: none;
   border-radius: 30px 0;
   font-family: "Cardo", serif;
   text-decoration: none;
-  color: #222222;
+  color: #030303;
   font-weight: 400;
   margin-right: 5px;
 }
@@ -184,8 +192,8 @@ label {
     border-bottom: 0;
   }
   .menu__link:hover {
-    -webkit-text-decoration: underline 2px solid #c0b7ad;
-            text-decoration: underline 2px solid #c0b7ad;
+    -webkit-text-decoration: underline 2px solid #a9978b;
+            text-decoration: underline 2px solid #a9978b;
   }
   .menu__img {
     max-width: 50px;
@@ -198,7 +206,7 @@ label {
     display: block;
   }
   .menu__button:hover {
-    background-color: #c0b7ad;
+    background-color: #a9978b;
   }
 }
 .footer {
@@ -216,9 +224,10 @@ label {
 }
 .footer__hr {
   width: 90%;
+  border: 1px solid #bdb2a7;
 }
 .footer__a {
-  color: #222222;
+  color: #030303;
 }
 
 @media screen and (min-width: 640px) {
@@ -242,7 +251,7 @@ label {
 }
 .review,
 .welcome {
-  background-color: #cbc4bb;
+  background-color: #bdb2a7;
   text-align: center;
   padding: 20px;
 }
@@ -271,7 +280,7 @@ label {
 }
 .photo__a {
   text-decoration: none;
-  color: #222222;
+  color: #030303;
 }
 
 .establishments__h2 {
@@ -429,7 +438,7 @@ label {
   padding: 20px 0 0 0;
 }
 .cenik--tmava {
-  background-color: #cbc4bb;
+  background-color: #bdb2a7;
 }
 
 .table__td {
@@ -480,7 +489,7 @@ label {
   padding-bottom: 20px;
 }
 .galerie--tmava {
-  background-color: #cbc4bb;
+  background-color: #bdb2a7;
 }
 
 @media screen and (min-width: 640px) {
@@ -528,7 +537,7 @@ label {
 }
 .kontakt__a {
   text-decoration: none;
-  color: #222222;
+  color: #030303;
 }
 .kontakt__frame--left {
   width: 300px;
@@ -554,7 +563,7 @@ label {
   margin-bottom: 50px;
 }
 .kontakt--tmava {
-  background-color: #cbc4bb;
+  background-color: #bdb2a7;
 }
 
 @media screen and (min-width: 900px) {
@@ -631,7 +640,7 @@ label {
   margin: 20px 20px 10px 20px;
 }
 .omne--druha {
-  background-color: #cbc4bb;
+  background-color: #bdb2a7;
 }
 .omne__div {
   margin-top: 20px;
@@ -701,12 +710,40 @@ label {
   }
 }
 .rezervace {
-  background-color: #cbc4bb;
+  background-color: #bdb2a7;
+  text-align: center;
+  padding: 20px;
 }
 .rezervace__h2 {
   font-family: "Cormorant", serif;
 }
 
+@media screen and (min-width: 640px) {
+  .rezervace {
+    padding: 40px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .rezervace {
+    padding: 60px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .rezervace {
+    padding: 100px;
+  }
+  .rezervace__h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .rezervace {
+    padding: 200px;
+  }
+  .rezervace__h2 {
+    font-size: 50px;
+  }
+}
 .sluzby {
   padding: 25px;
   text-align: center;
@@ -728,7 +765,7 @@ label {
   margin: 50px 0;
 }
 .sluzby--tmava {
-  background-color: #cbc4bb;
+  background-color: #bdb2a7;
 }
 .sluzby__img {
   width: 200px;
