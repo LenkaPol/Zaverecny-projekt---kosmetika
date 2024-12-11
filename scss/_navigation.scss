@@ -3,6 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 10;
     &__checkbox {
         position: absolute;
         left: -9999px;
@@ -12,7 +18,6 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        background-color: color.$menu-background;
     }
     &__item {
         border-bottom: 1px solid color.$section-background;
@@ -22,7 +27,7 @@
     }
     &__link {
         display: block;
-        padding: 15px;
+        padding: 10px;
         text-decoration: none;
         color: color.$font;
         text-transform: uppercase;
@@ -34,6 +39,9 @@
     }
     &__checkbox:checked ~ .menu__list {
         display: block;
+        background-color: color.$menu-background;
+        width: 100vh;
+        height: 100vh;
     }
     &__toggler {
         cursor: pointer;
@@ -55,7 +63,6 @@
         display: none;
     }
     &--left {
-        display: flex;
         align-items: center;
     }
 }
@@ -84,6 +91,9 @@ label {
             max-width: 50px;
             margin: 0 10px;
             display: block;
+        }
+        &--left {
+            display: flex;
         }
     }
 }

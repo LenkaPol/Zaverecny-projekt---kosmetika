@@ -25,7 +25,7 @@
         display: none;
     }
     &__text {
-        padding: 50px 30px;
+        padding: 80px 30px 50px 30px;
     }
 }
 @media screen and (min-width: 640px){
@@ -83,7 +83,21 @@
             margin: 0 40px;
         }
         &__text {
-            padding-top: calc(50vh/2.5);
+            padding-top: calc(50vh/2);
+        }
+    }
+}
+@media screen and (min-width: 1300px) {
+    .header {
+        &__text {
+            padding-top: calc(50vh/1.8);
+        }
+    }
+}
+@media screen and (min-width: 1980px) {
+    .header {
+        &__text {
+            padding: 350px;
         }
     }
 }
