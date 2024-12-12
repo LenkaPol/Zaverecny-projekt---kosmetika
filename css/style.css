@@ -13,12 +13,12 @@ html {
 }
 
 body {
-  font-family: "Cardo", serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: #030303;
+  font-family: "Libre Baskerville", serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #252525;
   margin: 0;
-  background-color: #d8cfc7;
+  background-color: rgba(216, 207, 199, 0.5);
 }
 body img {
   max-width: 100%;
@@ -36,7 +36,7 @@ body img {
   font-weight: 400;
   text-align: center;
   margin: 0;
-  color: #3f3f3f;
+  color: #353535;
 }
 .header__h1 {
   font-family: "Cormorant", serif;
@@ -45,7 +45,7 @@ body img {
   font-weight: 200;
   text-align: center;
   margin: 0;
-  color: #3f3f3f;
+  color: #353535;
 }
 .header__buttons {
   display: none;
@@ -73,12 +73,12 @@ body img {
     margin-top: 40px;
   }
   .header__button {
-    background-color: #bdb2a7;
+    background-color: rgba(189, 178, 167, 0.6);
     padding: 20px;
     width: 230px;
     text-align: center;
     text-decoration: none;
-    color: #030303;
+    color: #252525;
     margin: 0 20px;
   }
   .header__button--left {
@@ -88,10 +88,10 @@ body img {
     border-radius: 50px 0 50px 0;
   }
   .header__button--left:hover {
-    background-color: #a9978b;
+    background-color: rgba(169, 151, 139, 0.7);
   }
   .header__button--right:hover {
-    background-color: #a9978b;
+    background-color: rgba(169, 151, 139, 0.7);
   }
 }
 @media screen and (min-width: 1100px) {
@@ -143,7 +143,7 @@ body img {
   list-style: none;
 }
 .menu__item {
-  border-bottom: 1px solid #bdb2a7;
+  border-bottom: 1px solid rgba(189, 178, 167, 0.5);
 }
 .menu__item:last-child {
   border-bottom: none;
@@ -152,18 +152,18 @@ body img {
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #030303;
+  color: #252525;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 18px;
 }
 .menu__link:hover {
-  -webkit-text-decoration: underline 2px solid #a9978b;
-          text-decoration: underline 2px solid #a9978b;
+  -webkit-text-decoration: underline 2px solid rgba(169, 151, 139, 0.7);
+          text-decoration: underline 2px solid rgba(169, 151, 139, 0.7);
 }
 .menu__checkbox:checked ~ .menu__list {
   display: block;
-  background-color: #d8cfc7;
+  background-color: rgb(189, 178, 167);
   width: 100vh;
   height: 100vh;
 }
@@ -171,15 +171,17 @@ body img {
   cursor: pointer;
 }
 .menu__button {
-  padding: 10px 20px;
-  background-color: #bdb2a7;
+  padding: 15px 20px;
+  background-color: rgba(189, 178, 167, 0.6);
   border: none;
-  border-radius: 30px 0;
-  font-family: "Cardo", serif;
+  border-radius: 45px 0;
+  font-family: "Libre Baskerville", serif;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #030303;
+  color: #252525;
   font-weight: 400;
   margin-right: 5px;
+  font-size: 14px;
 }
 .menu__img {
   max-width: 50px;
@@ -209,8 +211,8 @@ label {
     border-bottom: 0;
   }
   .menu__link:hover {
-    -webkit-text-decoration: underline 2px solid #a9978b;
-            text-decoration: underline 2px solid #a9978b;
+    -webkit-text-decoration: underline 2px solid rgba(169, 151, 139, 0.7);
+            text-decoration: underline 2px solid rgba(169, 151, 139, 0.7);
   }
   .menu__img {
     max-width: 50px;
@@ -226,7 +228,7 @@ label {
     display: block;
   }
   .menu__button:hover {
-    background-color: #a9978b;
+    background-color: rgba(169, 151, 139, 0.7);
   }
 }
 .footer {
@@ -244,10 +246,10 @@ label {
 }
 .footer__hr {
   width: 90%;
-  border: 1px solid #bdb2a7;
+  border: 1px solid rgba(189, 178, 167, 0.5);
 }
 .footer__a {
-  color: #030303;
+  color: #252525;
 }
 
 @media screen and (min-width: 640px) {
@@ -271,7 +273,7 @@ label {
 }
 .review,
 .welcome {
-  background-color: #bdb2a7;
+  background-color: rgba(189, 178, 167, 0.5);
   text-align: center;
   padding: 20px;
 }
@@ -300,7 +302,7 @@ label {
 }
 .photo__a {
   text-decoration: none;
-  color: #030303;
+  color: #252525;
 }
 
 .establishments__h2 {
@@ -326,7 +328,7 @@ label {
   font-size: 20px;
 }
 .establishments__p--last {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 50px;
 }
 
@@ -364,7 +366,6 @@ label {
   }
   .establishments__p--first {
     margin-top: 30px;
-    font-size: 16px;
   }
   .review {
     display: flex;
@@ -381,7 +382,6 @@ label {
 @media screen and (min-width: 1100px) {
   .uvod__p {
     padding: 0 200px 50px 200px;
-    font-size: 18px;
   }
   .service {
     flex-wrap: nowrap;
@@ -394,7 +394,7 @@ label {
     width: 200px;
   }
   .establishments__h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
   .establishments-map {
     justify-content: center;
@@ -403,7 +403,7 @@ label {
     margin: 0 100px;
   }
   .review__h2 {
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 50px;
   }
   .review__grid {
@@ -457,8 +457,11 @@ label {
   margin: 0;
   padding: 20px 0 0 0;
 }
+.cenik__h2--prvni {
+  padding-top: 60px;
+}
 .cenik--tmava {
-  background-color: #bdb2a7;
+  background-color: rgba(189, 178, 167, 0.5);
 }
 
 .table__td {
@@ -479,6 +482,9 @@ label {
     font-size: 55px;
     padding: 10px;
   }
+  .cenik__h2--prvni {
+    padding-top: 80px;
+  }
 }
 .galerie__h2 {
   text-align: center;
@@ -487,6 +493,9 @@ label {
   font-size: 35px;
   margin: 0;
   padding: 20px 0 0 0;
+}
+.galerie__h2--prvni {
+  padding-top: 60px;
 }
 .galerie__img--levyroh, .galerie__img--pravyroh {
   margin: 10px;
@@ -509,7 +518,7 @@ label {
   padding-bottom: 20px;
 }
 .galerie--tmava {
-  background-color: #bdb2a7;
+  background-color: rgba(189, 178, 167, 0.5);
 }
 
 @media screen and (min-width: 640px) {
@@ -526,6 +535,9 @@ label {
   }
   .galerie__h2 {
     font-size: 45px;
+  }
+  .galerie__h2--prvni {
+    padding-top: 80px;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -552,12 +564,15 @@ label {
   margin: 0;
   font-size: 25px;
 }
+.kontakt__h2--prvni {
+  padding-top: 60px;
+}
 .kontakt__p--velke {
   font-size: 20px;
 }
 .kontakt__a {
   text-decoration: none;
-  color: #030303;
+  color: #252525;
 }
 .kontakt__frame--left {
   width: 300px;
@@ -583,7 +598,7 @@ label {
   margin-bottom: 50px;
 }
 .kontakt--tmava {
-  background-color: #bdb2a7;
+  background-color: rgba(189, 178, 167, 0.5);
 }
 
 @media screen and (min-width: 900px) {
@@ -610,7 +625,6 @@ label {
   }
   .kontakt__p--first {
     margin-top: 30px;
-    font-size: 16px;
   }
   .div--mapa {
     margin: 20px;
@@ -660,7 +674,7 @@ label {
   margin: 20px 20px 10px 20px;
 }
 .omne--druha {
-  background-color: #bdb2a7;
+  background-color: rgba(189, 178, 167, 0.5);
 }
 .omne__div {
   margin-top: 20px;
@@ -685,6 +699,9 @@ label {
   font-family: "WindSong", cursive;
   font-weight: 500;
   font-size: 35px;
+}
+.omne--prvni {
+  padding-top: 80px;
 }
 
 @media screen and (min-width: 640px) {
@@ -730,12 +747,12 @@ label {
   }
 }
 .rezervace {
-  background-color: #bdb2a7;
   text-align: center;
   padding: 20px;
 }
 .rezervace__h2 {
   font-family: "Cormorant", serif;
+  padding-top: 60px;
 }
 
 @media screen and (min-width: 640px) {
@@ -776,7 +793,8 @@ label {
 }
 .sluzby__h3 {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
+  padding: 0 20px;
 }
 .sluzby__p--main {
   margin: 20px 0;
@@ -785,11 +803,17 @@ label {
   margin: 50px 0;
 }
 .sluzby--tmava {
-  background-color: #bdb2a7;
+  background-color: rgba(189, 178, 167, 0.5);
 }
 .sluzby__img {
   width: 200px;
   border-radius: 400px 400px 0 0;
+}
+.sluzby__h2--prvni {
+  padding-top: 60px;
+}
+.sluzby__p {
+  padding: 0 30px;
 }
 
 @media screen and (min-width: 640px) {

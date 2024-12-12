@@ -1,10 +1,10 @@
 @use "color";
 .rezervace {
-    background-color: color.$section-background;
     text-align: center;
     padding: 20px;
     &__h2 {
         font-family: "Cormorant", serif;
+        padding-top: 60px;
     }
 }
 @media screen and (min-width: 640px) {

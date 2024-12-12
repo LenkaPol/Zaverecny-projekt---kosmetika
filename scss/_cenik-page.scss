@@ -17,6 +17,9 @@
         margin: 0;
         padding: 20px 0 0 0;
     }
+    &__h2--prvni {
+        padding-top: 60px;
+    }
     &--tmava {
         background-color: color.$section-background;
     }
@@ -42,6 +45,9 @@
         &__h2 {
             font-size: 55px;
             padding: 10px;
+        }
+        &__h2--prvni {
+            padding-top: 80px;
         }
     }
 }
